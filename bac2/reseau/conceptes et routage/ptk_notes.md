@@ -27,3 +27,21 @@ no shutdown à ajouter à la fin de chaque configuration d'interfaces que on veu
 lorsque on a qlq chose du style "fe80::2" on a une address link-local
 que on le comprends du prefixe
 
+## tp 1.6.1 : implement a small network
+- pour set up un mot de passe crypté:
+r1> enable
+r1# configure terminal
+r1# enable secret Ciscoenpa55 //pour le setting up du mot de passe
+r1# service password-encryption  //pour l'encryption 
+- configuration du mot de passe sur les lignes console (-> ligne consoles est le canal de communication physique direct pour permettre l'admin de se brancher direct i il n'as tjrs pas de address ip)
+
+line con 0
+password Ciscolinepa55
+login
+exit
+
+
+
+
+
+
