@@ -1,0 +1,103 @@
+Bonjour je suis JADDAD Amr, élève d'HEH en  IRT1-2 option développement et qui a un atteint de dysphasie (problème de langage)
+
+Je t'envoie ce message, car j'ai examen de repassage en Bases de données et développement back-end - Examen écrit.
+Y a une partie de m. MALAISE Antoine : mcd et mld & réalisation de requêtes.
+Y a une partie de m. MILLER Ivan : théorie pure + un code à corrigé.
+
+Partie 1 - m. MALAISE Antoine. (10 points) - Réalisez le MCD et MLD d'une base de données pour le contexte suivant :
+
+Une entreprise souhaite développer un site web de commande de poke bowls.
+Les clients peuvent soit  : commander des plats "tout faits" proposés dans un catalogue, soit composer leur propre poke bowl en choisissant les ingrédients.
+
+Le système doit permettre de gérer :
+* Les clients,
+* Les commandes,
+* Les employés du restaurant et leur type,
+* Les ingrédients et leur type,
+* La composition des poke bowls personnalisés.
+
+Règles de gestion :
+
+Clients et commandes :
+
+Un client peut passer aucune ou plusieurs commandes. Une commande est passée par un seul client et peut contenir plusieurs plats soit personnalisés et / ou du catalogue. Elle doit également contenir la quantité de ces plats, le prix unitaire et la date.
+
+Plats du catalogue :
+
+Un plat du catalogue possède un nom, une description, un prix et une catégorie. Un plat du catalogue peut apparaître dans plusieurs commandes. Les plats du catalogue appartiennent à une catégorie et une catégorie peut contenir plusieurs plats du catalogue. Une catégorie est représentée par un nom.
+
+Poke bowls personnalisés : 
+
+Un poke bowl personnalisé est unique et associé à une commande. Un poke bowl personnalisé est composé de plusieurs ingrédients. Un ingrédient peut entrer dans la composition de plusieurs poke bowls. Pour chaque ingrédient utilisé dans un poke bowl, la quantité et l'ordre d'ajout sont mémorisés.
+
+Ingrédients :
+
+Chaque ingrédient possède un nom, un statut en stock et un prix supplémentaire. Chaque ingrédient appartient à un seul type d'ingrédient. Un type d'ingrédient regroupe plusieurs ingrédients (exemples : base, protéines, topping, sauce, extra).
+Un type d'ingrédient définit des règles par défaut de composition : minimum, maximum et caractère obligatoire.
+
+Employés :
+
+Un employé possède un nom, un prénom, des coordonnées et un statut actif. Chaque employé est rattaché à un seul type d'employé. Un type d'employé peut concerne plusieurs (exemples : administrateur, cuisinier, préparateur, livreur). Une commande peut-être prise en charge par au plus un employé. Un employé peut traiter plusieurs commandes. Un poke bowl personnalisé est préparé par un seul employé.
+
+
+Partie 2 - m. MALAISE Antoine. (10 points) - Réalisez les requêtes sur les tables suivantes :
+La table plat :
+id	id_type		nom			prix		stock
+1	1		Poulet-curry		2.50		35
+2	2		Royal-Cheese		5.10		4
+3	1		Martino			3.00		87
+4	NULL		King-Bacon		5.40		0
+5	3		4 fromages		8.50		3
+
+La table types_plat :
+id	nom
+1	Sandwich
+2	Burger
+3	Pizza
+4	Salade
+
+Sélectionnez le champs nom dans la table plat ainsi que le champ nom de la table type_plat pour les plats qui ont leurs stock inférieur ou égale à 5 et classez par ordre décroissant de prix :
+
+Modifiez le l'id_type du King-Bacon, au lieu de NULL, elle devient 2 et son stock passe de 0 à 10 :
+
+Ajoutez un enregistrement à la table plat un enregistrement qui a comme valeur : id_type=1, nom=américain, prix=2.5 (la clé primaire est auto incrémentée) :
+
+Donnez la valeur en euros du total du stock des plats de type sandwich :
+
+Expliquez les termes suivants : commit et rollback
+
+Affichez le nom du type de plat ainsi que la valeur monétaire du stock de ces types qui ont plus de 10 éléments en stock et utiliser un alias pour nommer le résultat de la colonne : "valeur" : 
+
+---------------------------------------------------------------------------------------------------------
+
+Partie 1 - m. MILLER Ivan. (20 points)
+
+1. (2 points) - Que génère le code suivant ?
+$x = "<p> Voilà les <img src="pirate.jpg"> pirates ! </p> ";
+echo trim(strip_tags( $x ));
+
+2. (2 points) - Que génère le code PHP suivant ?
+$T = array(4, 19, 9, 29, 8, 39, 7);
+for ($i=0 ; $i<6 ; $i++) {
+	if ($T[$i]<$T[$i+1] echo 'P';
+	else if ($T[$i]<$T[$i+1] echo 'M';
+
+}
+
+3. (2 points) - Que génère le code PHP suivant ?
+$T = array(3, 8, 1, 6);
+foreach ($T as $k=>$v) {
+      $x = $v + $k;
+      echo $x;
+}
+
+4. (2 points) - Citez et expliquez 2 avantages apportés par l'utilisation de requêtes préparées (par rapport aux requêtes non préparées).
+
+5. (2 points) - Qu'est ce qu'une attaque XSS ?
+5.1 Quelle différence entre attaque XSS persistante et non persistante ?
+
+6. (2 points) - Dans le cas d'une liste de sélection comportant 7 choix et ramenant une valeur de type chaîne de caractère, de quelle façon sécuriseriez vous la valeur réceptionnée ? (Exemple de code ou explication)
+
+7. L'utilisation d'un élément <input type="number"> garantit une valeur de type nombre. Comment un pirate peut-il exploiter ce champs pour une tentative d'attaque par injection de code ?
+
+8. (2 points) - Qu'est ce que l'entropie d'un mot de passe et de quels paramètres dépend-elle ?
