@@ -1,0 +1,26 @@
+# Big title
+## Section
+### Subsection
+
+Normal text, with **bold**, *italic*, and `inline code`.
+
+- Bullet point
+- Another one
+  - Nested (indent two spaces)
+
+1. Numbered
+2. List
+
+- [ ] To-do item
+- [x] Done item
+
+> A quote or an important remark
+
+[Link text](https://example.com)
+
+---   (horizontal line)
+
+| Concept | Meaning |
+|---------|---------|
+| Stack   | LIFO    |
+| Queue   | FIFO    |

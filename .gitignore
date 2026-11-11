@@ -1,0 +1,12 @@
+*.iso
+*.ISO
+*.exe
+*.zip
+*.vdi
+*.vhdx
+*.ova
+~$*
+*.sublime-workspace
+*.sublime-color-scheme
+node_modules/
+vendor/

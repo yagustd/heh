@@ -1,0 +1,34 @@
+@font-face {
+	font-family:Roboto;
+	src:url("roboto/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+	font-family:RobotoBold;
+	src:url("roboto/Roboto-Bold.ttf");
+}
+
+body { font-family:Roboto,Arial,sans-serif; background-color:#223; color:#eee;}
+h1,h2,h3,strong { font-family:RobotoBold; }
+img { max-width:100%; }
+h1 { text-align:center; }
+h2 { font-size:1.5rem; }
+h3, p { margin:0.2em 0; }
+a { text-decoration:none; color:#eee; }
+s { color:#bbb;}
+header, nav, footer { text-align:center;}
+header { margin-bottom:1em;}
+footer { margin-top:2em;}
+
+#pets { list-style:none; margin:0; padding:0;
+display:flex; flex-direction:row; justify-content:center; align-items:stretch; flex-wrap:wrap; 
+}
+.pet h3 { margin:0.2em 0; }
+.pet a { min-width:240px; min-height:112px; display:block; padding:6px; transition:0.33s;}
+.pet a:hover, .pet a:focus { background-color:#b60; transition:0s;}
+.pet img { width:100px; float:left; padding-right:6px;}
+
+form { text-align:center;}
+form label { display:block; margin:0.5rem 0; font-family:RobotoBold;}
+form input { padding:0.25em 0.5em; font-size:1rem; }
+#pet { display:inline-block;}
+#pet img {width:128px; padding-right:12px;}
