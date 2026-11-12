@@ -1,0 +1,208 @@
+{
+    "name": "Pink Purple",
+    "author": "Custom",
+
+    "variables": {
+        "bg": "#150d21",
+        "bg_light": "#1f1430",
+        "bg_select": "#3a2559",
+        "fg": "#f8f0ff",
+        "comment": "#8f77ad",
+        "pink": "#ff5fa2",
+        "hot_pink": "#ff79c6",
+        "light_pink": "#ffb8dd",
+        "purple": "#b388ff",
+        "lilac": "#d5b8ff",
+        "violet": "#9d6bff",
+        "magenta": "#e040fb",
+        "red": "#ff3d71"
+    },
+
+    "globals": {
+        "foreground": "var(fg)",
+        "background": "var(bg)",
+        "caret": "var(hot_pink)",
+        "line_highlight": "var(bg_light)",
+        "selection": "var(bg_select)",
+        "selection_border": "var(violet)",
+        "misspelling": "var(red)",
+        "invisibles": "#45335f",
+        "guide": "#2c1f42",
+        "active_guide": "var(purple)",
+        "stack_guide": "#45335f",
+        "gutter": "var(bg)",
+        "gutter_foreground": "#5f4a80",
+        "find_highlight": "var(pink)",
+        "find_highlight_foreground": "var(bg)",
+        "brackets_foreground": "var(hot_pink)",
+        "brackets_options": "underline",
+        "bracket_contents_foreground": "var(purple)",
+        "bracket_contents_options": "underline",
+        "tags_foreground": "var(pink)",
+        "tags_options": "stippled_underline"
+    },
+
+    "rules": [
+        {
+            "name": "Comment",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "var(comment)",
+            "font_style": "italic"
+        },
+        {
+            "name": "String",
+            "scope": "string, punctuation.definition.string",
+            "foreground": "var(light_pink)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant / language constant",
+            "scope": "constant.language, constant.character, constant.other",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword, keyword.control, keyword.operator.word",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Operator",
+            "scope": "keyword.operator, punctuation.separator, punctuation.accessor",
+            "foreground": "var(hot_pink)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage, storage.modifier",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "foreground": "var(lilac)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Class / type names",
+            "scope": "entity.name.class, entity.name.type, entity.other.inherited-class, support.class",
+            "foreground": "var(lilac)",
+            "font_style": "underline"
+        },
+        {
+            "name": "Function names",
+            "scope": "entity.name.function, support.function, meta.function-call variable.function",
+            "foreground": "var(magenta)"
+        },
+        {
+            "name": "Function parameters",
+            "scope": "variable.parameter",
+            "foreground": "var(hot_pink)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Built-in support",
+            "scope": "support.type, support.constant, support.variable",
+            "foreground": "var(purple)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Language variables (this, self)",
+            "scope": "variable.language",
+            "foreground": "var(hot_pink)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Variables (PHP $var, etc.)",
+            "scope": "variable, variable.other, variable.other.readwrite, variable.other.php, punctuation.definition.variable",
+            "foreground": "var(lilac)"
+        },
+        {
+            "name": "Embedded code delimiters (<?php ?>)",
+            "scope": "punctuation.section.embedded, punctuation.section.embedded.begin, punctuation.section.embedded.end, meta.tag.preprocessor",
+            "foreground": "var(magenta)"
+        },
+        {
+            "name": "Terminators and brackets",
+            "scope": "punctuation.terminator, punctuation.section.block, punctuation.section.group, punctuation.section.braces, punctuation.section.parens, punctuation.section.brackets, meta.brace",
+            "foreground": "var(hot_pink)"
+        },
+        {
+            "name": "Tag",
+            "scope": "entity.name.tag",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Attribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(lilac)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Decorators / annotations",
+            "scope": "meta.annotation, meta.decorator, punctuation.definition.annotation, entity.name.function.decorator",
+            "foreground": "var(violet)"
+        },
+        {
+            "name": "Escape characters",
+            "scope": "constant.character.escape, string.regexp",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "var(fg)",
+            "background": "var(red)"
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(fg)",
+            "background": "var(violet)"
+        },
+        {
+            "name": "Markup heading",
+            "scope": "markup.heading, entity.name.section",
+            "foreground": "var(pink)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markup bold",
+            "scope": "markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markup italic",
+            "scope": "markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markup link",
+            "scope": "markup.underline.link, string.other.link",
+            "foreground": "var(purple)",
+            "font_style": "underline"
+        },
+        {
+            "name": "Markup inline code",
+            "scope": "markup.raw, markup.inline.raw",
+            "foreground": "var(light_pink)"
+        },
+        {
+            "name": "Diff inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(lilac)"
+        },
+        {
+            "name": "Diff deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Diff changed",
+            "scope": "markup.changed",
+            "foreground": "var(purple)"
+        }
+    ]
+}

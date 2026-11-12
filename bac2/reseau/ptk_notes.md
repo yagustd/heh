@@ -27,3 +27,6 @@ no shutdown à ajouter à la fin de chaque configuration d'interfaces que on veu
 lorsque on a qlq chose du style "fe80::2" on a une address link-local
 que on le comprends du prefixe
 
+## tp 1.5.10: verify directly connected networks
+blablabla
+
