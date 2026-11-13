@@ -35,5 +35,9 @@ on cree les groupe locaux apd dossiers partagé et les dossier globaux apd de uo
 
 !!!!! à l'examen -> plan de sauvegarde à l'ecrit
 
+à l'examen activer la courbeille pour l'ad et aussi pour la connection bureau à distance (rdp port 3389) faut le securiser
+
+profil itinerant possible à l'exam 
+delegation de zone et delegation de control non à l'exam
 
 
