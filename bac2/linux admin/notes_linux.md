@@ -1,0 +1,6 @@
+# TP linux
+## tp2: commande de base
+- whoami : pour savoir le nom d'utilisateur
+- hostname: pour le name du host, le mien est localhost.localdomain
+- ls: pour savoir le fichier courant
+- ls -all: pour avoir tt les info sur le fichier dans lequel on est
