@@ -30,3 +30,9 @@ markmap:
 pour admin un switch à distance une passerrelle pas defaut doit etre configuré
 - configurer adresse ip
 - configurer masque de sous reseau
+- procedure de configuration
+     -    par defaut tout les ports sont assignés à vlan1, faut changer (possiblement pour ipv6)
+     - le commutateur doit etre configuré avec une passerelle par defeaut qui peut etre gere à distance
+     - apres le set up il faut verifier avc "show ip interface" et "show ipv6 interface"
+
+
