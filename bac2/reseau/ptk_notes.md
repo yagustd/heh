@@ -1,4 +1,5 @@
 # TP SRWE(Switching, routing and wireless essentials)
+tp faits: 1.4.7, 1.5.10, 3.1.4,
 ## tp 1.4.7 : configure router interface
 si jamais un mot de passe est demandé utiliser "cisco"
  pour passer au mode privilegié(?) et configurer:
@@ -71,7 +72,7 @@ dns, http, pop3, imap
 
 
 
-## plan de sauvegarde -> document ecrit
+### plan de sauvegarde -> document ecrit
 à realiser pour le projet de cybersec
  - frequence?
  - type?
@@ -79,5 +80,18 @@ dns, http, pop3, imap
  - securite: chiffré?
  - conservation
  
- ## DRP/PRA
+ ### DRP/PRA
  -> disaster recovery plan, un plan pour que le systeme revient en ligne le plus vite possible. c'est documenté et testé, anti panic plan 
+
+## tp 15.6.1: configurer ipv4 et ipv6 static routes
+pour configurer une route statique utiliser la commande:
+Edge_Router(config)#ip route 0.0.0.0 0.0.0.0 s0/0/0
+
+pour la configuration d'un route statique flottante on va lui attribuer une AD (ie admin distance)
+
+donc pour set up la route flottante traverant isp2 on utilise la commande:
+ip route 0.0.0.0 0.0.0.0 s0/0/1 5
+
+
+pour la version ipv6
+Edge_Router(config)#ipv6 route ::/0 s0/0/0
